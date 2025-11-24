@@ -11,7 +11,6 @@ class ThreadTest extends Thread
             System.out.println ("Thread " +
                     Thread.currentThread().getId() +
                     " is running");
-
         }
         catch (Exception e)
         {
@@ -20,17 +19,15 @@ class ThreadTest extends Thread
         }
     }
 }
-
 // Main Class
 public class insteadofstartMethod
 {
     public static void main(String[] args)
     {
-        int n = 5;
+        int n = 6;
         for (int i=1; i<=n; i++)
         {
             ThreadTest object = new ThreadTest();
-
             // start() is replaced with run() for
             // seeing the purpose of start
             object.run();
