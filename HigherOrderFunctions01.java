@@ -14,7 +14,6 @@ public class HigherOrderFunctions01 {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5);
 
-        // Higher-order function using lambda expression as an argument
         processList(numbers, x -> x * x);
     }
 }
