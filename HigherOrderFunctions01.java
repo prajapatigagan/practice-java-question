@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.function.Function;
 
-public class HigherOrderFunctions {
+public class HigherOrderFunctions01 {
 
     public static void processList(List<Integer> numbers, Function<Integer, Integer> operation) {
         for (Integer number : numbers) {
@@ -15,6 +15,6 @@ public class HigherOrderFunctions {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5);
 
         // Higher-order function using lambda expression as an argument
-        processList(numbers, x -> x * x); // Output: 1 4 9 16 25
+        processList(numbers, x -> x * x);
     }
 }
